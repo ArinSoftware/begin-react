@@ -1,60 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-
-// JSX
-
-// <button type="button" style="padding: 10px; color: white; background-color: red; border: 2px solid yellow;">HTML BUTTON</button>
+import Card from './components/Card';
 
 
-function App() {
+const App = () => {
 
-    const str1 = "Click ";
-    const str2 = "Me";
 
-    return (
+  return (
     <div>
-        <button type="button" style={{padding:'10px', color: 'white', backgroundColor: 'blue', border: '2px solid yellow'}}>{str1.concat(str2)}</button>  
-        
+
+      <div className="card-group">
+
+        <Card cardTitle="Trabzonspor"/>
+
+        <Card cardTitle="Bursaspor"/>
+
+        <Card cardTitle="Samsunspor" />
+
+
+      </div>
+
     </div>
-    );
+  );
 }
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('root') 
+  <App />,
+  document.getElementById('root')
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const names = ["Arin", "Elis", "Gamze", "Gürcan"];
-
-function App() {
-  return /*#__PURE__React.createElement("div", { 
-    __self: this,
-  }, names.map(name => /*#__PURE__React.createElement("h1", {
-    __self: this,
-  }, name)));
-}
-
-ReactDOM.render( /*#__PURE__React.createElement(App, {
-  __self: undefined,
-}), document.getElementById('root'));  */
