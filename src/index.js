@@ -9,35 +9,51 @@ const App = () => {
 
 
   return (
-    <div>
+    <div className="container">
 
-      <div className="card-group">
+      <div className="row">
 
-        <Collapse href="collapseExample1">
-          Pure Collapse Content NO CARD
-        </Collapse>
+        <div className="card-group w-100">
 
+          <div className="col">
 
-        <Collapse href="collapseExample2">
-          <Card
-            cardTitle="Card Title II"
-            cardText="Lorem Ipsum Text II"
-            updatedTime="Last Updated 2 min ago"
-            image="https://picsum.photos/id/10/200/300"
-          />
-        </Collapse>
+            <Collapse href="collapseExample1">
+              <Card
+                cardText="Lorem Ipsum Text I"
+                updatedTime="Last Updated 1 min ago"
+                image="https://picsum.photos/id/1/200/300"
+              />
+            </Collapse>
 
-          <Card
-            cardTitle="Card Title III"
-            cardText="Lorem Ipsum Text III"
-            updatedTime="Last Updated 3 min ago"
-            image="https://picsum.photos/id/100/200/300"
-          />
+          </div>
 
+          <div className="col">
 
+            <Collapse href="collapseExample2">
+              <Card
+                cardTitle="Card Title II"
+                cardText="Lorem Ipsum Text II"
+                updatedTime="Last Updated 2 min ago"
+                image="https://picsum.photos/id/2/200/300"
+              />
+            </Collapse>
 
+          </div>
+
+          <div className="col">
+
+            <Collapse href="collapseExample3">
+              <Card
+
+                cardText="Lorem Ipsum Text III"
+                updatedTime="Last Updated 3 min ago"
+                image="https://picsum.photos/id/3/200/300"
+              />
+            </Collapse>
+
+          </div>
+        </div>
       </div>
-
     </div>
   );
 }
