@@ -31,7 +31,7 @@ const App = () => {
 
             <Collapse href="collapseExample2">
               <Card
-                cardTitle="Card Title II"
+                cardTitle="TEST TITLEX"
                 cardText="Lorem Ipsum Text II"
                 updatedTime="Last Updated 2 min ago"
                 image="https://picsum.photos/id/2/200/300"
